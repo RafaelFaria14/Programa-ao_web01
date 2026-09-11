@@ -93,7 +93,14 @@
                     <br><br>
 
                     <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="4" cols="50" required></textarea>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." rows="4" cols="50" 
+                    minlength="10" maxlength="200" required></textarea>
+                    <br><br>
+
+                <label for ="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" placeholder="(XX) XXXX-XXXX" required>
+                <title>Formato: (XX) XXXX-XXXX</title>  
+                <br><br>
                     <button type="submit">Enviar</button>
                 </fieldset>
             </form>
@@ -101,7 +108,7 @@
                 <fieldset>
                   <legend>compre seu ingresso</legend>
                    <label for="setores-estadio">Setores do estadio</label>
-                   <select id ="setores-estadio" name="setores-estadio">
+                   <select id ="setores-estadio" name="setores-estadio" required>
                     <option value="arquibancada">Arquibancada </option>
                     <option value="cadeira">cadeiras</option>
                     <option value="vip">VIP </option>
