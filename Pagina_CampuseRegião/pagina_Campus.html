@@ -1,36 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Campus & Região</title>
-     <link rel="preconnect"
-    href="https://fonts.googleapis.com"> <link
-    href="https://fonts.googleapis.com/css2?
-    family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <title>Pagina Campus & Região</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
- <body id="campus-regiao">
-<header id="cabecalho"> 
-    <img src="img/Imagementrada.jpeg"
-         alt="IF Goiano Campus Ceres"
-         width="400" height="120">
+<body id="campus-regiao">
 
-         <nav id="menu-principal">
-      <ul>
-        <li><a href="#home" class="link-nav">home</a></li>
-        <li><a href="#turma" class="link-nav">turma</a></li>
-        <li><a href="#projetos" class="link-nav">projetos</a></li>
-        <li><a href="#campus-regiao" class="link-nav">Campus & Região</a></li>
-        <li><a href="#Tecnologias" class="link-nav">Tecnologias</a></li>
-        <li><a href="#contato-eventos" class="link-nav">Contato & Eventos</a></li>
+    <header id="cabecalho">
 
-      </ul>
-    </nav>
+        <nav id="menu-principal" aria-label="Navegação principal">
+
+            <a href="index.html" id="nome-cabecalho">
+                Portal da Turma
+            </a>
+
+            <ul>
+                <li>
+                    <a href="index.html" class="link-nav">Home</a>
+                </li>
+
+                <li>
+                    <a href="turma.html" class="link-nav">Turma</a>
+                </li>
+
+                <li>
+                    <a href="projetos.html" class="link-nav">Projetos</a>
+                </li>
+
+                <li>
+                    <a href="campus.html" class="link-nav ativo" aria-current="page">
+                        Campus & Região
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tecnologias.html" class="link-nav">
+                        Tecnologias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contato.html" class="link-nav">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Banner panorâmico -->
+
+    <section class="banner-topo">
+
+        <img
+            src="img/ImagemIFtrabalho.jpeg"
+            alt="Visão aérea do IF Goiano Campus Ceres e região do Rio das Almas"
+            class="img-banner"
+        >
+
+        <div class="banner-legenda">
+            <h1>Campus Ceres & Vale de São Patrício</h1>
+        </div>
+
+    </section>
+
+
+    <!-- Sobre o IF Goiano -->
 
     <section id="sobreIF" class="secao">
+
         <h2>Sobre o IF Goiano</h2>
+
+        <img
+            src="img/Imagementrada.jpeg"
+            alt="Entrada e portaria do IF Goiano Campus Ceres"
+        >
+
         <p>
             O Instituto Federal Goiano (IF Goiano)
             Campus Ceres é uma instituição pública federal de ensino localizada no
@@ -40,14 +100,17 @@
         <p>
             Sua atuação está voltada à
             educação profissional, científica e tecnológica
-            oferecendo formação que integra <strong>ensino, pesquisa e extensão.</strong>
-            O campus desempenha um papel importante na formação de profissionais e no desenvolvimento econômico, social e cultural do Vale de São Patrício, a
-            tendendo estudantes de diferentes municípios da região.
+            oferecendo formação que integra
+            <strong>ensino, pesquisa e extensão.</strong>
+            O campus desempenha um papel importante na formação de profissionais
+            e no desenvolvimento econômico, social e cultural do Vale de São Patrício,
+            atendendo estudantes de diferentes municípios da região.
         </p>
 
         <p>
-            O campus desempenha um papel importante na formação de profissionais e no desenvolvimento econômico, social e cultural do Vale de São Patrício, a
-            tendendo estudantes de diferentes municípios da região.
+            O campus desempenha um papel importante na formação de profissionais
+            e no desenvolvimento econômico, social e cultural do Vale de São Patrício,
+            atendendo estudantes de diferentes municípios da região.
         </p>
 
         <h3>História do Campus</h3>
@@ -58,7 +121,7 @@
             município de Ceres, no estado de Goiás, na região Centro-Oeste do Brasil.
         </p>
 
-        <h2>linha do tempo do IF Goiano</h2>
+        <h2>Linha do tempo do IF Goiano</h2>
 
         <ol>
             <li>1993: Criação da Escola Agrotécnica.</li>
@@ -72,12 +135,16 @@
         <p>
             O Vale de São Patrício está localizado na região central e centro-norte de Goiás,
             no Centro-Oeste brasileiro.
-            O município de Ceres
-            é um dos principais polos regionais de educação, comércio e serviços.
+            O município de Ceres é um dos principais polos regionais de educação,
+            comércio e serviços.
             O Campus Ceres fica na zona rural, na Rodovia GO-154, km 3,
             a aproximadamente 180 km de Goiânia.
         </p>
+
     </section>
+
+
+    <!-- História do Vale de São Patrício -->
 
     <section id="sobreValeSP" class="secao">
 
@@ -109,77 +176,86 @@
 
     </section>
 
+
+    <!-- Tabela de municípios -->
+
     <section id="tabela-municipio" class="secao municipio">
-    <table>
 
-        <thead>
-            <tr>
-                <th>Municipio</th>
-                <th>População</th>
-                <th>Destaque regional</th>
-            </tr>
-        </thead>
+        <table>
 
-        <tbody>
+            <thead>
+                <tr>
+                    <th>Municipio</th>
+                    <th>População</th>
+                    <th>Destaque regional</th>
+                </tr>
+            </thead>
 
-            <tr>
-                <td>Goianésia</td>
-                <td>73.708</td>
-                <td>Polo regional de comércio, agroindústria e produção sucroenergética.</td>
-            </tr>
+            <tbody>
 
-            <tr>
-                <td>Jaraguá</td>
-                <td>45.223</td>
-                <td>Tradição na confecção de roupas e comércio.</td>
-            </tr>
+                <tr>
+                    <td>Goianésia</td>
+                    <td>73.708</td>
+                    <td>Polo regional de comércio, agroindústria e produção sucroenergética.</td>
+                </tr>
 
-            <tr>
-                <td>Itapuranga</td>
-                <td>26.113</td>
-                <td>Agricultura e pecuária.</td>
-            </tr>
+                <tr>
+                    <td>Jaraguá</td>
+                    <td>45.223</td>
+                    <td>Tradição na confecção de roupas e comércio.</td>
+                </tr>
 
-            <tr>
-                <td>Ceres</td>
-                <td>22.046</td>
-                <td>Referência regional em educação e saúde.</td>
-            </tr>
+                <tr>
+                    <td>Itapuranga</td>
+                    <td>26.113</td>
+                    <td>Agricultura e pecuária.</td>
+                </tr>
 
-            <tr>
-                <td>Itapaci</td>
-                <td>21.087</td>
-                <td>Comércio e atividades agropecuárias.</td>
-            </tr>
+                <tr>
+                    <td>Ceres</td>
+                    <td>22.046</td>
+                    <td>Referência regional em educação e saúde.</td>
+                </tr>
 
-            <tr>
-                <td>Rubiataba</td>
-                <td>19.788</td>
-                <td>Agroindústria, cana-de-açúcar e bioenergia.</td>
-            </tr>
+                <tr>
+                    <td>Itapaci</td>
+                    <td>21.087</td>
+                    <td>Comércio e atividades agropecuárias.</td>
+                </tr>
 
-            <tr>
-                <td>Uruana</td>
-                <td>13.729</td>
-                <td>Produção de melancia.</td>
-            </tr>
+                <tr>
+                    <td>Rubiataba</td>
+                    <td>19.788</td>
+                    <td>Agroindústria, cana-de-açúcar e bioenergia.</td>
+                </tr>
 
-            <tr>
-                <td>Rialma</td>
-                <td>12.165</td>
-                <td>Comércio e integração urbana com Ceres.</td>
-            </tr>
+                <tr>
+                    <td>Uruana</td>
+                    <td>13.729</td>
+                    <td>Produção de melancia.</td>
+                </tr>
 
-        </tbody>
+                <tr>
+                    <td>Rialma</td>
+                    <td>12.165</td>
+                    <td>Comércio e integração urbana com Ceres.</td>
+                </tr>
 
-    </table>
+            </tbody>
+
+        </table>
+
     </section>
+
+
+    <!-- Municípios próximos -->
 
     <section id="municipios-proximos">
 
         <h2>Municípios próximos a Ceres</h2>
 
         <article class="card-municipio">
+
             <h3>Rialma</h3>
 
             <p>
@@ -193,9 +269,12 @@
                 As duas cidades são conectadas por uma ponte
                 sobre o Rio das Almas.
             </p>
+
         </article>
 
+
         <article class="card-municipio">
+
             <h3>Rianápolis</h3>
 
             <p>
@@ -209,9 +288,12 @@
                 O município está situado próximo ao eixo
                 rodoviário que liga Ceres a Anápolis.
             </p>
+
         </article>
 
+
         <article class="card-municipio">
+
             <h3>Carmo do Rio Verde</h3>
 
             <p>
@@ -225,39 +307,51 @@
                 O município tem sua história e economia
                 ligadas à produção agropecuária regional.
             </p>
+
         </article>
 
     </section>
 
+
+    <!-- Dados do Campus -->
+
     <aside id="dados-campus">
 
-    <h2>Dados do Campus Ceres</h2>
+        <h2>Dados do Campus Ceres</h2>
 
-    <p>
-        <strong>Ano de fundação:</strong> 1993
-    </p>
+        <p>
+            <strong>Ano de fundação:</strong> 1993
+        </p>
 
-    <p>
-        <strong>Cursos oferecidos:</strong>
-        Agronomia, Sistemas de Informação, Zootecnia,
-        Ciências Biológicas, Química, Agropecuária,
-        Meio Ambiente e Informática para Internet.
-    </p>
+        <p>
+            <strong>Cursos oferecidos:</strong>
+            Agronomia, Sistemas de Informação, Zootecnia,
+            Ciências Biológicas, Química, Agropecuária,
+            Meio Ambiente e Informática para Internet.
+        </p>
 
-    <p>
-        <strong>Número de alunos:</strong>
-        Mais de 1.500 estudantes, conforme registro institucional de 2017.
-    </p>
+        <p>
+            <strong>Número de alunos:</strong>
+            Mais de 1.500 estudantes, conforme registro institucional de 2017.
+        </p>
 
-</aside>
+    </aside>
 
 
-<footer id="rodape">
+    <!-- Rodapé -->
 
-    <p>Desenvolvido por: Rafael Faria, Leomardo Paes  e Rennan Fidelis</p>
+    <footer id="rodape">
 
-    <a href="#cabecalho">Voltar para o início</a>
+        <p>
+            Desenvolvido por: Rafael Faria, Leomardo Paes e Rennan Fidelis
+        </p>
 
-</footer>
-    </body>
-    </html>
+        <a href="#cabecalho">
+            Voltar para o início
+        </a>
+
+    </footer>
+
+</body>
+
+</html>
