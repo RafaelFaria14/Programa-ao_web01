@@ -201,7 +201,6 @@ tbody tr:nth-child(even) {
 
 
 /* Cards dos municípios */
-
 .card-municipio {
     background-color: var(--branco);
     border: 1px solid var(--linha);
@@ -209,7 +208,6 @@ tbody tr:nth-child(even) {
     padding: 1rem 1.25rem;
     margin-bottom: 1rem;
     border-radius: 6px 6px 0 0;
-
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -224,6 +222,32 @@ tbody tr:nth-child(even) {
     margin-bottom: 0.5rem;
 }
 
+.card-municipio details {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f2f6fa;
+    border: 1px solid var(--linha);
+}
+
+.card-municipio summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--azul2);
+    transition: color 0.2s ease;
+}
+
+.card-municipio summary:hover {
+    color: var(--dourado);
+}
+
+.card-municipio details[open] summary {
+    margin-bottom: 10px;
+}
+
+.card-municipio details p {
+    margin-bottom: 0;
+}
 
 /* Dados do Campus */
 
