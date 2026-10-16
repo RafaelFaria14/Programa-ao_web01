@@ -9,11 +9,6 @@
     --linha: #D0D7E3;
     --branco: #FFFFFF;
 
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--tinta);
-    background-color: var(--fundo);
 }
 
 * {
